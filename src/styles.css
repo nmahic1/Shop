@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--primary-red);
+  border-radius: 10px;
+}
+.navbar .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar .right {
+  display: flex;
+  gap: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+.button-container {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.button-container:hover, .button-container:focus {
+  background-color: white;
+  color: var(--primary-red);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.aboutus-wrapper {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("Assets/korpa-transp.png");
+  background-size: 370px auto;
+}
+
+.contacts-wrapper {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("Assets/korpa-transp.png");
+  background-size: 370px auto;
+  display: flex;
+  justify-content: center;
+}
+.contacts-wrapper .contact {
+  border: 1px solid var(--primary-black-transparent);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 50px;
+  background-color: var(--primary-black-transparent);
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+  font-size: 30px;
+}
+
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("Assets/korpa-transp.png");
+  background-size: 370px auto;
+  height: 120%;
+}
+.landing-wrapper .welcome {
+  font-size: 500%;
+  text-align: center;
+  margin: 5%;
+  font-weight: bold;
+}
+.landing-wrapper .stores .name {
+  margin: 20px;
+  font-size: 30px;
+}
+.landing-wrapper .aboutUs {
+  text-align: center;
+  font-size: 200%;
+  margin: 5%;
+  font-weight: bold;
+}
+.landing-wrapper .aboutUs .text {
+  border: 1px solid var(--primary-black-transparent);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 10px;
+  background-color: var(--primary-black-transparent);
+}
+
+@media (min-width: 601px) {
+  .landing-wrapper .stores .name {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  .landing-wrapper .stores .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.products-wrapper {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("Assets/korpa-transp.png");
+  background-size: 370px auto;
+}
+
+.store-wrapper {
+  border: 1px solid var(--primary-black-transparent);
+  background-color: var(--primary-black-transparent);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 10px;
+}
+.store-wrapper .store-name {
+  text-align: center;
+  margin: 10% 0;
+}
+.store-wrapper .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+:root {
+  font-size: 16px;
+  --primary-red: rgb(197, 43, 43);
+  --primary-red-transparent: rgb(197, 43, 43, 0.2);
+  --primary-black-transparent: rgb(8, 0, 0, 0.2);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=styles.css.map */

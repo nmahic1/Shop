@@ -1,0 +1,58 @@
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //margin: 10%;
+  // height: 100vh;
+  //background-image: url("Assets/korpa-transp.png");
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("Assets/korpa-transp.png");
+  background-size: 370px auto;
+  //opacity: 0.2;
+  height: 120%;
+
+  .welcome {
+    font-size: 500%;
+    text-align: center;
+    margin: 5%;
+    font-weight: bold;
+  }
+
+  .stores .name {
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  .aboutUs {
+    text-align: center;
+    font-size: 200%;
+    margin: 5%;
+    font-weight: bold;
+
+    .text {
+      border: 1px solid var(--primary-black-transparent);
+      border-radius: 30px;
+      padding: 50px;
+      margin: 10px;
+      background-color: var(--primary-black-transparent);
+    }
+  }
+}
+
+@media (min-width: 601px) {
+  .landing-wrapper .stores .name {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-wrapper .stores .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

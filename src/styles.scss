@@ -1,0 +1,19 @@
+@import "./Components/Navbar/navbar";
+@import "./Components/Footer/footer";
+@import "./Components/Button/button";
+@import "./Screens/AboutUs/aboutUs";
+@import "./Screens/Contacts/contacts";
+@import "./Screens/Landing/landing";
+@import "./Screens/Products/products";
+@import "./Components/Store/store";
+
+:root {
+  font-size: 16px;
+  --primary-red: rgb(197, 43, 43);
+  --primary-red-transparent: rgb(197, 43, 43, 0.2);
+  --primary-black-transparent: rgb(8, 0, 0, 0.2);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}

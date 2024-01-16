@@ -1,0 +1,19 @@
+.store-wrapper {
+  border: 1px solid var(--primary-black-transparent);
+  background-color: var(--primary-black-transparent);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 10px;
+
+  .store-name {
+    text-align: center;
+    margin: 10% 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+}
